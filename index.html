@@ -42,14 +42,16 @@
 
         scene.add(mesh);
 
-        for(var i=0;i<100;i++){
-            var mesh = new THREE.Mesh(geometry, material);
-            mesh.position.x=(Math.random()-0.5)*18;
-            mesh.position.y=(Math.random()-0.5)*18;
-            mesh.position.z=(Math.random()-0.5)*18;
+        // Uncomment this for multiple objects.
 
-            scene.add(mesh);
-        }
+        // var noOfObjects = 100;
+        // for(var i=0;i<noOfObjects;i++){
+        //     var mesh = new THREE.Mesh(geometry, material);
+        //     mesh.position.x=(Math.random()-0.5)*18;
+        //     mesh.position.y=(Math.random()-0.5)*18;
+        //     mesh.position.z=(Math.random()-0.5)*18;
+        //     scene.add(mesh);
+        // }
 
         var light = new THREE.PointLight(0xffffff, 1, 500);
         light.position.set(0, 0, 20)
@@ -66,6 +68,8 @@
         render();
 
 
+        // Uncomment this for on click listener for the animations activated on whole screen.
+
         // this.t1=new TimelineMax({paused:true});
         // this.t1.to(this.mesh.material.color, 0.5, {r:1,g:0,b:0.5,ease:Expo.easeOut});
         // this.t1.to(this.mesh.position, 0.5, {x:1,ease:Expo.easeOut},);
@@ -80,6 +84,8 @@
         // document.body.addEventListener("click", () => {
         //     this.t1.restart ();
         // })
+
+        // Uncomment this for on click listener for the animations activated on clicking the object.
 
         // window.addEventListener("click", () => {
         //     event.preventDefault();

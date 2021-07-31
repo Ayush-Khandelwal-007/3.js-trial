@@ -6,3 +6,15 @@ body{
 canvas{
     display:block;
 }
+
+h1 {
+    color: rgb(53, 88, 1);
+    position: absolute;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 7em;
+    text-transform: uppercase;
+    width: auto;
+    line-height: .8em;
+    border: 5px solid;
+    padding: .2em;
+  }
